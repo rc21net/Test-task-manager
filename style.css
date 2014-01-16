@@ -75,7 +75,7 @@ a {text-decoration: none;}
 	min-width: 100px;
 	margin: 0 auto;
 	font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 }
 header {
 	min-height: 2em;
@@ -89,6 +89,7 @@ button {
 	border-radius: 10px;
 	cursor: pointer;
 	opacity: 0.8;
+	font-size: inherit;
 }
 button:focus {
 	outline: none;
