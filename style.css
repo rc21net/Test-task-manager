@@ -1,0 +1,242 @@
+/* RESET */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+audio, canvas, video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+a {text-decoration: none;}
+::-moz-focus-inner { padding: 0; border: 0 }
+
+/* Layout */
+.application {
+	max-width: 900px;
+	min-width: 100px;
+	margin: 0 auto;
+	font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+	font-size: 14px;
+}
+header {
+	min-height: 2em;
+	line-height: 2em;
+	background: #d7d7d7;
+}
+
+button {
+	background: #ffffff;
+	border: 1px solid #000000;
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: 0.8;
+}
+button:focus {
+	outline: none;
+}
+button:hover {
+	opacity: 1;
+}
+button.new-task {
+	margin: 0 0.3em;
+}
+
+/* icons */
+.icon {
+	background: url(sprite.gif) no-repeat;
+	display: inline-block;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.icon:hover {
+	opacity: 1;
+}
+.delete {
+	background-position: 0 0;
+	width: 14px;
+	height: 14px;
+	float: right;
+	margin: 0.5em 0.3em;
+}
+.edit {
+	background-position: -16px 0;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin: 0.4em 0.3em;
+}
+
+/* task */
+.task {
+	border-bottom: 1px solid #f7f7f7;
+	/* min-height: 2em; */
+	line-height: 2em;
+	position: relative;
+}
+.task:hover {
+	background: #f7f7f7;
+}
+.completed .subject {
+	text-decoration: line-through;
+}
+.task .complete {
+	vertical-align: middle;
+	margin: 0 0.2em;
+}
+.priority {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	background-position: 23px 0;
+	vertical-align: middle;
+	border-radius: 15px;
+	margin: 0 0.5em;
+}
+.priority-1 {
+	background-position: -33px 3px;
+}
+.priority-3 {
+	background-position: -34px 4px;
+	-moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.tag-1 {
+	background-color: #e04c0d;
+}
+.tag-2 {
+	background-color: #d88911;
+}
+.tag-3 {
+	background-color: #f5c53f;
+}
+.tag-4 {
+	background-color: #b9dc83;
+}
+.tag-5 {
+	background-color: #96d9ee;
+}
+.deleteConfirm-bar {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.deleteConfirm {
+	height: 2em;
+	line-height: 2em;
+	background: #c60c30;
+	border: none;
+	border-radius: 0;
+	opacity: 1;
+	margin: 0;
+	margin-right: 0.1em;
+}
+.deleteCancel {
+	height: 2em;
+	line-height: 2em;
+	background: #8d8b8b;
+	border: none;
+	border-radius: 0;
+	opacity: 1;
+	margin: 0;
+}
+
+/* form task-edit */
+.task-edit {
+	background: #d7d7d7;
+	padding: 4px 11px 12px;
+	display: block;
+}
+.subject-edit {
+	display: block;
+	width: 100%;
+	height: 4em;
+	border: 1px solid #000000;
+}
+.tags-bar button {
+	border: none;
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin: 0 0.3em;
+}
+.task-edit button.current {
+	border: 2px solid #000000;
+	cursor: default;
+}
+.priority-bar button{
+	margin: 0 0.3em;
+}
+.complete-bar button {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	margin: 0 0.3em;
+}
+.action-bar {
+	text-align: center;
+}
+.action-bar button {
+	margin: 0 0.5em;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densityDpi=medium-dpi" />
+<title>Abbyy::task::test</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+<body>
+	<div class="application">
+		<header>
+			<button class="new-task">New task</button>
+		</header>
+		<section class="tasklist">
+			<article class="task">
+				<input type="checkbox" class="completed" />
+				<i class="icon priority tag-2"></i>
+				<span class="subject">Some task</span>
+				<i class="icon edit"></i>
+				<i class="icon delete"></i>
+			</article>
+			<article class="task">
+				<input type="checkbox" class="completed" />
+				<i class="icon priority priority-high tag-5"></i>
+				<span class="subject">Some task</span>
+				<i class="icon edit"></i>
+				<i class="icon delete"></i>
+				<button class="deleteConfirm">Delete?</button>
+			</article>
+			<article class="task">
+				<input type="checkbox" class="completed" />
+				<i class="icon priority priority-low"></i>
+				<span class="subject">Some task</span>
+				<i class="icon edit"></i>
+				<i class="icon delete"></i>
+			</article>
+			<article class="task">
+				<input type="checkbox" class="completed" />
+				<i class="icon priority"></i>
+				<span class="subject">Some task</span>
+				<i class="icon edit"></i>
+				<i class="icon delete"></i>
+			</article>
+			<article class="task">
+				<form class="task-edit">
+					<textarea class="subject-edit"></textarea>
+					<div class="tags-bar">
+						<label>Tags</label>
+						<button class="tag-0 current"></button>
+						<button class="tag-1"></button>
+						<button class="tag-2"></button>
+						<button class="tag-3"></button>
+						<button class="tag-4"></button>
+						<button class="tag-5"></button>
+					</div>
+					<div class="priority-bar">
+						<label>Priority</label>
+						<button>High</button>
+						<button class="current">Normal</button>
+						<button>Low</button>
+					</div>
+					<div class="complete-bar">
+						<button></button>
+						<label>Completed</label>
+					</div>
+					<div class="action-bar">
+						<button class="save">Save</button>
+						<button class="cancel">Cancel</button>
+					</div>
+				</form>
+			</article>
+		</section>
+	</div>
+</body>
+</html>
